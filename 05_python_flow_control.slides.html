@@ -16004,17 +16004,20 @@ Fuori dopo: 5
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">informa_utente</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;STAMPA i primi due elementi della lista data</span>
 <span class="sd">    &quot;&quot;&quot;</span>    
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I primi due elementi sono&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Side effect: I primi due elementi sono&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
 <span class="n">mia_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 
-<span class="n">informa_utente</span><span class="p">(</span><span class="n">mia_lista</span><span class="p">)</span>
+<span class="n">risultato</span> <span class="o">=</span> <span class="n">informa_utente</span><span class="p">(</span><span class="n">mia_lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Output:&#39;</span><span class="p">,</span> <span class="n">risultato</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input originale:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16034,7 +16037,10 @@ Fuori dopo: 5
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>I primi due elementi sono 8 e 5
+<pre>Input [8, 5, 6, 2]
+Side effect: I primi due elementi sono 8 e 5
+Output: None
+Input originale: [8, 5, 6, 2]
 </pre>
 </div>
 </div>
@@ -16064,7 +16070,7 @@ Fuori dopo: 5
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">crea_nuova_lista_raddoppiata</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
@@ -16076,11 +16082,11 @@ Fuori dopo: 5
     <span class="k">return</span> <span class="n">res</span>   
 
 <span class="n">mia_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lista originale prima:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 
 <span class="n">risultato</span> <span class="o">=</span> <span class="n">crea_nuova_lista_raddoppiata</span><span class="p">(</span><span class="n">mia_lista</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lista restituita:&quot;</span><span class="p">,</span> <span class="n">risultato</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lista originale dopo:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output:&quot;</span><span class="p">,</span> <span class="n">risultato</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input originale:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 
 <span class="c1"># Non è possibile concatenare funzioni</span>
 <span class="c1"># risultato_reversed = crea_nuova_lista_raddoppiata(mia_lista).reverse()</span>
@@ -16104,9 +16110,9 @@ Fuori dopo: 5
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Lista originale prima: [5, 2, 6, 3]
-Lista restituita: [10, 4, 12, 6]
-Lista originale dopo: [5, 2, 6, 3]
+<pre>Input: [5, 2, 6, 3]
+Output: [10, 4, 12, 6]
+Input originale: [5, 2, 6, 3]
 </pre>
 </div>
 </div>
@@ -16137,7 +16143,7 @@ Lista originale dopo: [5, 2, 6, 3]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">raddoppia_lista</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
@@ -16145,10 +16151,11 @@ Lista originale dopo: [5, 2, 6, 3]
         <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span>    
     
 <span class="n">mia_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lista originale prima:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 
-<span class="n">raddoppia_lista</span><span class="p">(</span><span class="n">mia_lista</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lista originale dopo:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
+<span class="n">risultato</span> <span class="o">=</span> <span class="n">raddoppia_lista</span><span class="p">(</span><span class="n">mia_lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output:&quot;</span><span class="p">,</span> <span class="n">risultato</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input originale:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16168,8 +16175,9 @@ Lista originale dopo: [5, 2, 6, 3]
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Lista originale prima: [5, 2, 6, 3]
-Lista originale dopo: [10, 4, 12, 6]
+<pre>Input: [5, 2, 6, 3]
+Output: None
+Input originale: [10, 4, 12, 6]
 </pre>
 </div>
 </div>
@@ -16199,7 +16207,7 @@ Lista originale dopo: [10, 4, 12, 6]
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">raddoppia_lista_e_ritorna</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
@@ -16209,10 +16217,11 @@ Lista originale dopo: [10, 4, 12, 6]
                   <span class="c1"># perché si rientra nel caso precedente.</span>
     
 <span class="n">mia_lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lista originale prima:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 
-<span class="n">raddoppia_lista_e_ritorna</span><span class="p">(</span><span class="n">mia_lista</span><span class="p">)</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lista originale dopo + reverse:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
+<span class="n">risultato</span> <span class="o">=</span> <span class="n">raddoppia_lista_e_ritorna</span><span class="p">(</span><span class="n">mia_lista</span><span class="p">)</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Output.reverse():&quot;</span><span class="p">,</span> <span class="n">risultato</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Input originale:&#39;</span><span class="p">,</span> <span class="n">mia_lista</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16232,8 +16241,9 @@ Lista originale dopo: [10, 4, 12, 6]
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Lista originale prima: [5, 2, 6, 3]
-Lista originale dopo + reverse: [6, 12, 4, 10]
+<pre>Input: [5, 2, 6, 3]
+Output.reverse(): None
+Input originale: [6, 12, 4, 10]
 </pre>
 </div>
 </div>
@@ -18562,8 +18572,20 @@ e
 <ul>
 <li>È sconsigliato modifirare l'oggetto iterabile durante l'iterazione in quanto può provocare effetti imprevisti.</li>
 <li>Fate attenzione alla sintassi: un'indentazione non corretta o o la mancanza dei due punti possono causare un errore!</li>
+<li>È consigliabile utilizzare nomi nuovi per le variabili inizializzate dal ciclo for.</li>
 </ul>
 
+</div>
+</div>
+</div>
+</div>
+<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Ciclo-while">Ciclo <code>while</code><a class="anchor-link" href="#Ciclo-while">&#182;</a></h1>
 </div>
 </div>
 </div>
