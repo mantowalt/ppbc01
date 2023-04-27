@@ -1,0 +1,8 @@
+<country name="United Stated of America" capital="Washington">
+  <states>
+    <state name="Hawaii"/>
+    <state name="Florida"/>
+    <state name="Texas"/>
+    <state name="California"/>
+  </states>
+</country>
