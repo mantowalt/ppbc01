@@ -1,5 +1,10 @@
 .DS_Store
 .ipynb_checkpoints/
+<<<<<<< HEAD
+=======
+.venv
+env
+>>>>>>> 2c797a8168ca823b8e1225d7a4c790eda13b564e
 _tmp/
 _soluzioni
 progetti
