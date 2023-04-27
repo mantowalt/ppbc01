@@ -1,0 +1,2 @@
+Questo è il file "data2.txt" ed è stato aperto correttamente!
+Quello che leggete è il testo al suo interno.
