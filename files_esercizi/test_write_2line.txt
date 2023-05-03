@@ -1,0 +1,2 @@
+Questa è una riga in un file di prova!
+E questa è un'altra riga.
