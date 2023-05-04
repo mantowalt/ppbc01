@@ -1,6 +1,6 @@
 """
-Questo scipt permette di convertire un file dal mitico formato FriendBirthDates aka FBD
-a un comunissimo file CSV.
+Questo scipt permette di convertire un file dal fantomatico formato (di nostra
+invenzione) FriendBirthDates, aka FBD, a un comunissimo file CSV.
 
 Usage:
     ./converti_nomi_nascita.py [options] <input_file> <output_file>
@@ -8,8 +8,10 @@ Usage:
 Questo file può essere anche importato come un modulo e contiene le 
 setuenti funzioni:
 
-    * file_to_dict(file_path, anno_calcolo) - restituisce un dizionario
-    * dict_to_csv(file_path, in_dict, write_mode) - crea/aggiorna il file CSV indicato
+    * file_to_dict(file_path, anno_calcolo) - dato un file FBD, restituisce un
+        dizionario nel formato {età: [nome, ...], ...}
+    * dict_to_csv(file_path, in_dict, write_mode) - crea/aggiorna un file CSV, 
+        a partire da un dizionario nel formato {età: [nome, ...], ...}
 """
 
 from os import path
@@ -17,21 +19,24 @@ from datetime import date   # importo l'oggetto date dal modulo datetime
 
 def file_to_dict(file_path, anno_calcolo=date.today().year):
     """
-        Funzione per convertire un file nel celebre formato FriendBirthDates aka FBD
-        in un dizionario Python nel formato {età: [nome, ...], ...}
+        Funzione per convertire un file nel celebre formato FriendBirthDates,
+        aka FBD, in un dizionario Python nel formato {età: [nome, ...], ...}
 
     Args:
-        file_path (str): the first number as int, float or str.
-        anno_calcolo (int): l'anno da considerarsi "corrente" per il calcolo dell'età;
-                      se l'argomento è omesso, il valore di default è l'anno corrente.
+        file_path (str): il percorso al file FBD (usare lo slash '/' come
+                         separatore delle directory).
+        anno_calcolo (int): l'anno da considerarsi "corrente" per il calcolo
+                         dell'età; se l'argomento è omesso, il valore di default
+                         è l'anno corrente.
 
     Returns:
-        The result of the multiplication as float.
+        Un dizionario contenente delle età come chiavi e liste di nomi come
+        valori. {età: [nome, ...], ...}
 
     """
     res_dict = {}                               # inizializzo il dizionario
 
-    with open(file_path, 'r', encoding='utf-8') as file:  # apro in lettura
+    with open(file_path, 'r', encoding='utf-8') as file:  # apro il file in lettura
         
         linea = file.readline()                 # leggo la prima riga
 
@@ -56,53 +61,59 @@ def dict_to_csv(file_path, in_dict, mode):
     in un file CSV.
 
     Args:
-        file_path (str): the first number as int, float or str.
-        in_dict (dict): l'anno da considerarsi "corrente" per il calcolo dell'età.
-        mode (str): "a" aggiunge nuovo contenuto al file oppure "w" sovrascrive e inizializza un nuovo file.
+        file_path (str): il percorso al file (usare lo slash '/' come separatore delle directory).
+        in_dict (dict): dizionario da usare come base di dati per la creazione del CSV.
+        mode (str): "a" aggiunge nuovo contenuto al file oppure "w" sovrascrive
+                    e inizializza un nuovo file.
     """
-    if mode in [None, 'w', 'a']:               # se è stato passato un valore di mode consentito previsto
-        if mode is None:                       # se il mode non è indicato
-            if path.exists(file_path):         # se il file esiste già
-                raise FileExistsError(         # solleva un errore
+    if mode in [None, 'w', 'a']:          # se è stato passato un valore di mode consentito previsto
+        if mode is None:                  # se il mode non è indicato
+            if path.exists(file_path):    # se il file esiste già
+                raise FileExistsError(    # solleva un errore
                     f'Il file "{path.abspath(file_path)}" è già esistente.')
-            else:                              # altrimenti usa la modalità 'w'
+            else:                         # altrimenti usa la modalità 'w'
                 mode = 'w'
     else:                                      # altrimenti
         raise ValueError(                      # solleva un errore
             'Il parametro "write_mode" della funzione dict_to_csv() '
             f'può essere solo "None", "w" o "a" invece è stato passato "{mode}".')
     
-    with open(file_path, mode, encoding='utf-8') as file_out:  # apro con il mode indicato
-        if mode == 'w':                                        # se la mode passata è 'w'
-            file_out.write('Nome,Età\n')                       # scrive la prima riga di intestazione
-        elif mode == 'a':                                      # se la mode passata è 'a'
-            if not path.exists(file_path):                     # se il percorso file non esiste
-                file_out.write('Nome,Età\n')                   # scrive la prima riga di intestazione
-            elif not path.isfile(file_path):                   # se il percorso esiste, ma non è un file
-                raise ValueError(                              # solleva un errore
-                    f'Il percorso indicato "{path.abspath(file_path)}" non è un file. '
-                    'Non è possibile appendere del contenuto a un oggetto che non è un file.')
+    with open(file_path, mode, encoding='utf-8') as file_out:  # apro il file con il mode indicato
+        if mode == 'w':                                # se la mode passata è 'w'
+            file_out.write('Nome,Età\n')               # scrive la prima riga di intestazione
+        elif mode == 'a':                              # se la mode passata è 'a'
+            if not path.exists(file_path):             # se il percorso file non esiste
+                file_out.write('Nome,Età\n')           # scrive la prima riga di intestazione
+            elif not path.isfile(file_path):           # se il percorso esiste, ma non è un file
+                raise ValueError(                      # solleva un errore
+                    f'Il percorso indicato "{path.abspath(file_path)}" non è '
+                    'un file. Non è possibile appendere del contenuto a un '
+                    'oggetto che non è un file.')
         for key in in_dict:                                    # per ciascuna chiave del in_dict creato prima
             for nome in in_dict[key]:                          # per ciascun nome nella lista corrispondente
                 file_out.write(nome + ',' + str(key) + '\n')   # scrive la riga contente la coppia nome,età
 
 
-if __name__ == '__main__':                    # se viene esegiuto come script
-    from optparse import OptionParser         # importo la classe OptionParser
-                                              # (uno strumento più avanzato per leggere parametri e opzioni
-                                              # rispetto a sys.argv e crea l'opzione di help in automatico)
+if __name__ == '__main__':              # se viene esegiuto come script
+    from optparse import OptionParser   # importo la classe OptionParser
+                                        #   (uno strumento più avanzato per leggere parametri e opzioni
+                                        #   rispetto a sys.argv e crea l'opzione di help in automatico)
     
     # preparo una stringa di messaggio per l'Usage
     usage_msg = '%prog [options] <input_file> <output_file>'
-    # usage_msg = './converti_nomi_nascita.py [options] <input_file> <output_file>'
+    #      |--> './converti_nomi_nascita.py [options] <input_file> <output_file>'
     
-    optparser = OptionParser(usage=usage_msg)                # creo l'oggetto optparser a partire dalla classe OptionParser
+    optparser = OptionParser(usage=usage_msg)  # creo l'oggetto optparser a partire dalla classe OptionParser
+   
     # creo le opzioni disponibili per la command line
     optparser.add_option('-w', '--write', action='store_true',
-                    help='Forza la sovrascrittura del file di destinazione, se questo esiste già, altrimenti lo crea.')
+                    help='Forza la sovrascrittura del file di destinazione '
+                         'se questo esiste già, altrimenti lo crea.')
     optparser.add_option('-a', '--append', action='store_true',
-                    help="Forza l'aggiunta del nuovo contenuto al fondo del file, se questo esiste già, altrimenti lo crea.")
+                    help="Forza l'aggiunta del nuovo contenuto al fondo del file "
+                         "se questo esiste già, altrimenti lo crea.")
 
+    # ottengo le opzioni e gli argomenti da OptionParser.parse_args()
     (options, lista_args) = optparser.parse_args()
 
     qta_args = len(lista_args)                   # conto gli argomenti
