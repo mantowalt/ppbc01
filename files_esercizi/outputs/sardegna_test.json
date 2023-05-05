@@ -1,0 +1,552 @@
+[
+  {
+    "COMUNE": "BURGOS",
+    "PROVINCIA": "SASSARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "FORESTA BURGOS",
+    "ABITANTI LOCALITA'": 22,
+    "QUOTA LOCALITA'": 725,
+    "ID FEATURE": "378",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "NULE",
+    "PROVINCIA": "SASSARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "NULE",
+    "ABITANTI LOCALITA'": 1719,
+    "QUOTA LOCALITA'": 650,
+    "ID FEATURE": "371",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "OSILO",
+    "PROVINCIA": "SASSARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "OSILO",
+    "ABITANTI LOCALITA'": 3447,
+    "QUOTA LOCALITA'": 615,
+    "ID FEATURE": "297",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "PATTADA",
+    "PROVINCIA": "SASSARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "BANTINE",
+    "ABITANTI LOCALITA'": 126,
+    "QUOTA LOCALITA'": 637,
+    "ID FEATURE": "352",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "PATTADA",
+    "PROVINCIA": "SASSARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "PATTADA",
+    "ABITANTI LOCALITA'": 3541,
+    "QUOTA LOCALITA'": 778,
+    "ID FEATURE": "350",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ARITZO",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "ARITZO",
+    "ABITANTI LOCALITA'": 1676,
+    "QUOTA LOCALITA'": 796,
+    "ID FEATURE": "683",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "AUSTIS",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "AUSTIS",
+    "ABITANTI LOCALITA'": 1046,
+    "QUOTA LOCALITA'": 737,
+    "ID FEATURE": "663",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "BELVI'",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "BELVI'",
+    "ABITANTI LOCALITA'": 803,
+    "QUOTA LOCALITA'": 660,
+    "ID FEATURE": "682",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "BOLOTANA",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "BADDE SALIGHES",
+    "ABITANTI LOCALITA'": 0,
+    "QUOTA LOCALITA'": 955,
+    "ID FEATURE": "611",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "BOLOTANA",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SANTA MARIA 'E SACCU",
+    "ABITANTI LOCALITA'": 0,
+    "QUOTA LOCALITA'": 845,
+    "ID FEATURE": "610",
+    "CODICE LOCALITA'": "2003"
+  },
+  {
+    "COMUNE": "BORTIGALI",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "MULARGIA",
+    "ABITANTI LOCALITA'": 88,
+    "QUOTA LOCALITA'": 700,
+    "ID FEATURE": "626",
+    "CODICE LOCALITA'": "1002"
+  },
+  {
+    "COMUNE": "DESULO",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "DESULO",
+    "ABITANTI LOCALITA'": 3213,
+    "QUOTA LOCALITA'": 888,
+    "ID FEATURE": "672",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "FONNI",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "FONNI",
+    "ABITANTI LOCALITA'": 4638,
+    "QUOTA LOCALITA'": 1000,
+    "ID FEATURE": "659",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "GADONI",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "GADONI",
+    "ABITANTI LOCALITA'": 1148,
+    "QUOTA LOCALITA'": 696,
+    "ID FEATURE": "690",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "GAVOI",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "GAVOI",
+    "ABITANTI LOCALITA'": 3008,
+    "QUOTA LOCALITA'": 790,
+    "ID FEATURE": "655",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "LODE'",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SANT'ANNA (Lod\u00e8)",
+    "ABITANTI LOCALITA'": 1,
+    "QUOTA LOCALITA'": 647,
+    "ID FEATURE": "582",
+    "CODICE LOCALITA'": "2002"
+  },
+  {
+    "COMUNE": "MAMOIADA",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "MAMOIADA",
+    "ABITANTI LOCALITA'": 2632,
+    "QUOTA LOCALITA'": 644,
+    "ID FEATURE": "651",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "NUORO",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "NOSTRA SIGNORA DE SU MONTE",
+    "ABITANTI LOCALITA'": 17,
+    "QUOTA LOCALITA'": 907,
+    "ID FEATURE": "615",
+    "CODICE LOCALITA'": "2002"
+  },
+  {
+    "COMUNE": "OLLOLAI",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "OLLOLAI",
+    "ABITANTI LOCALITA'": 1797,
+    "QUOTA LOCALITA'": 920,
+    "ID FEATURE": "654",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ONANI'",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "MAMONE",
+    "ABITANTI LOCALITA'": 51,
+    "QUOTA LOCALITA'": 860,
+    "ID FEATURE": "588",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ORGOSOLO",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "ORGOSOLO",
+    "ABITANTI LOCALITA'": 4768,
+    "QUOTA LOCALITA'": 620,
+    "ID FEATURE": "652",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ORUNE",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "ORUNE",
+    "ABITANTI LOCALITA'": 3134,
+    "QUOTA LOCALITA'": 750,
+    "ID FEATURE": "602",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ORUNE",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SU PRADU",
+    "ABITANTI LOCALITA'": 127,
+    "QUOTA LOCALITA'": 870,
+    "ID FEATURE": "603",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "OSIDDA",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "OSIDDA",
+    "ABITANTI LOCALITA'": 299,
+    "QUOTA LOCALITA'": 650,
+    "ID FEATURE": "593",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "OVODDA",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "OVODDA",
+    "ABITANTI LOCALITA'": 1754,
+    "QUOTA LOCALITA'": 710,
+    "ID FEATURE": "661",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "SARULE",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SARULE",
+    "ABITANTI LOCALITA'": 2016,
+    "QUOTA LOCALITA'": 626,
+    "ID FEATURE": "647",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "SORGONO",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SORGONO",
+    "ABITANTI LOCALITA'": 2036,
+    "QUOTA LOCALITA'": 688,
+    "ID FEATURE": "669",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "TETI",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "TETI",
+    "ABITANTI LOCALITA'": 866,
+    "QUOTA LOCALITA'": 714,
+    "ID FEATURE": "660",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "TONARA",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "TELISERI",
+    "ABITANTI LOCALITA'": 88,
+    "QUOTA LOCALITA'": 796,
+    "ID FEATURE": "671",
+    "CODICE LOCALITA'": "2002"
+  },
+  {
+    "COMUNE": "TONARA",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "TONARA",
+    "ABITANTI LOCALITA'": 2424,
+    "QUOTA LOCALITA'": 900,
+    "ID FEATURE": "670",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "LODINE",
+    "PROVINCIA": "NUORO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "LODINE",
+    "ABITANTI LOCALITA'": 352,
+    "QUOTA LOCALITA'": 884,
+    "ID FEATURE": "657",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "BURCEI",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "BURCEI",
+    "ABITANTI LOCALITA'": 2996,
+    "QUOTA LOCALITA'": 648,
+    "ID FEATURE": "832",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "SINNAI",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "MONTE CRESIA",
+    "ABITANTI LOCALITA'": 0,
+    "QUOTA LOCALITA'": 651,
+    "ID FEATURE": "877",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "SINNAI",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "MONTE CRESIA",
+    "ABITANTI LOCALITA'": 0,
+    "QUOTA LOCALITA'": 651,
+    "ID FEATURE": "877",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "ESTERZILI",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "ESTERZILI",
+    "ABITANTI LOCALITA'": 950,
+    "QUOTA LOCALITA'": 731,
+    "ID FEATURE": "713",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ISILI",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "CASA DI LAVORO ALL'APERTO",
+    "ABITANTI LOCALITA'": 8,
+    "QUOTA LOCALITA'": 682,
+    "ID FEATURE": "706",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "SADALI",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SADALI",
+    "ABITANTI LOCALITA'": 1188,
+    "QUOTA LOCALITA'": 705,
+    "ID FEATURE": "703",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "SERRI",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SERRI",
+    "ABITANTI LOCALITA'": 805,
+    "QUOTA LOCALITA'": 617,
+    "ID FEATURE": "719",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "SEULO",
+    "PROVINCIA": "CAGLIARI",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SEULO",
+    "ABITANTI LOCALITA'": 1065,
+    "QUOTA LOCALITA'": 799,
+    "ID FEATURE": "692",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "SANTU LUSSURGIU",
+    "PROVINCIA": "ORISTANO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SAN LEONARDO",
+    "ABITANTI LOCALITA'": 49,
+    "QUOTA LOCALITA'": 684,
+    "ID FEATURE": "396",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "LACONI",
+    "PROVINCIA": "ORISTANO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SANTA SOFIA",
+    "ABITANTI LOCALITA'": 99,
+    "QUOTA LOCALITA'": 818,
+    "ID FEATURE": "694",
+    "CODICE LOCALITA'": "1003"
+  },
+  {
+    "COMUNE": "ALA' DEI SARDI",
+    "PROVINCIA": "OLBIA-TEMPIO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "ALA' DEI SARDI",
+    "ABITANTI LOCALITA'": 1964,
+    "QUOTA LOCALITA'": 663,
+    "ID FEATURE": "333",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "BUDDUSO'",
+    "PROVINCIA": "OLBIA-TEMPIO",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "BUDDUSO'",
+    "ABITANTI LOCALITA'": 4205,
+    "QUOTA LOCALITA'": 700,
+    "ID FEATURE": "351",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ARZANA",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "ARZANA",
+    "ABITANTI LOCALITA'": 2929,
+    "QUOTA LOCALITA'": 672,
+    "ID FEATURE": "689",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "GAIRO",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "GAIRO SANT'ELENA",
+    "ABITANTI LOCALITA'": 1489,
+    "QUOTA LOCALITA'": 685,
+    "ID FEATURE": "698",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "GAIRO",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "TAQUISARA",
+    "ABITANTI LOCALITA'": 222,
+    "QUOTA LOCALITA'": 760,
+    "ID FEATURE": "696",
+    "CODICE LOCALITA'": "1002"
+  },
+  {
+    "COMUNE": "OSINI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "OSINI",
+    "ABITANTI LOCALITA'": 1123,
+    "QUOTA LOCALITA'": 645,
+    "ID FEATURE": "702",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "SEUI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SEUI",
+    "ABITANTI LOCALITA'": 1784,
+    "QUOTA LOCALITA'": 820,
+    "ID FEATURE": "700",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "TALANA",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "TALANA",
+    "ABITANTI LOCALITA'": 1204,
+    "QUOTA LOCALITA'": 682,
+    "ID FEATURE": "665",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "ULASSAI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "ULASSAI",
+    "ABITANTI LOCALITA'": 1728,
+    "QUOTA LOCALITA'": 775,
+    "ID FEATURE": "704",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "URZULEI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "SILANA",
+    "ABITANTI LOCALITA'": 9,
+    "QUOTA LOCALITA'": 1025,
+    "ID FEATURE": "656",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "USSASSAI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "USSASSAI",
+    "ABITANTI LOCALITA'": 871,
+    "QUOTA LOCALITA'": 710,
+    "ID FEATURE": "705",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "VILLAGRANDE STRISAILI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "PRIMO SALTO DEL FLUMENDOSA",
+    "ABITANTI LOCALITA'": 8,
+    "QUOTA LOCALITA'": 832,
+    "ID FEATURE": "685",
+    "CODICE LOCALITA'": "2001"
+  },
+  {
+    "COMUNE": "VILLAGRANDE STRISAILI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "VILLAGRANDE STRISAILI",
+    "ABITANTI LOCALITA'": 3000,
+    "QUOTA LOCALITA'": 700,
+    "ID FEATURE": "681",
+    "CODICE LOCALITA'": "1001"
+  },
+  {
+    "COMUNE": "VILLAGRANDE STRISAILI",
+    "PROVINCIA": "OGLIASTRA",
+    "REGIONE": "Sardegna",
+    "NOME LOCALITA'": "VILLANOVA STRISAILI",
+    "ABITANTI LOCALITA'": 718,
+    "QUOTA LOCALITA'": 845,
+    "ID FEATURE": "680",
+    "CODICE LOCALITA'": "1002"
+  }
+]
