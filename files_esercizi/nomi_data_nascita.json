@@ -1,0 +1,12 @@
+[
+	{"nome": "Ada", "dataNascita": 1999},
+	{"nome": "Pippo", "dataNascita": 1980},
+	{"nome": "Felice", "dataNascita": 1976},
+	{"nome": "Geronima", "dataNascita": 1999},
+	{"nome": "Ciccio", "dataNascita": 1980},
+	{"nome": "Luca", "dataNascita": 1972},
+	{"nome": "Roberto", "dataNascita": 1999},
+	{"nome": "Pluto", "dataNascita": 1972},
+	{"nome": "Mimmo", "dataNascita": 1976},
+	{"nome": "Totò", "dataNascita": 1923}
+]
