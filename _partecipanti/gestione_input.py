@@ -1,22 +1,33 @@
 # By TORFIS
 
-def leggi_float(messaggio, minimo=None, massimo=None):
+TIPI_NUMERICI = {
+    'decimale': float,
+    'intero': int
+}
+
+def leggi_numero(messaggio, tipo, minimo=None, massimo=None):
+    if any((minimo, massimo)) and minimo >= massimo:
+        raise ValueError("L'argomento passato 'minimo' deve essere minore di 'massimo'.")
+    if tipo not in TIPI_NUMERICI:
+        raise ValueError(f"L'argomento passato 'tipo' può essere solo {TIPI_NUMERICI.keys()}.")
+    
     while True:
         valore = input(messaggio) or 0
+        
         try:
-            valore = float(valore)
+            valore = TIPI_NUMERICI[tipo](valore)
             
             if minimo is not None and valore < minimo:
-                print(f"ERRORE: il valore minimo consentito è <{minimo}>")
+                print(f"ERRORE: il valore minimo consentito è < {minimo} >")
                 continue
             if massimo is not None and valore > massimo:
-                print(f"ERRORE: il valore massimo consentito è <{massimo}>")
+                print(f"ERRORE: il valore massimo consentito è < {massimo} >")
                 continue
                 
             return valore
         
         except ValueError:
-            print("ERRORE: inserisci un valore decimale valido, hai inserito <" + valore + ">")
+            print(f"ERRORE: inserisci un valore {tipo} valido, hai inserito < {valore} >")
 
 def leggi_stringa(messaggio, lunghezza_minima, lunghezza_massima, caratteri_validi):
     while True:
